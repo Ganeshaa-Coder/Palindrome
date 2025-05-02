@@ -1,15 +1,9 @@
-import string
+s = input("Enter a String:")
 
-def is_palindrome(data):
-    
-    
-    cleaned = ''.join(char.lower() for char in data if char.isalnum())
-    return cleaned == cleaned[::-1]
+r = s[::-1]
+print(r)
 
-
-user_input = input("Enter a string to check if it's a palindrome: ")
-
-if is_palindrome(user_input):
-    print("It's a palindrome!")
+if r == s:
+    print("String Palindrome")
 else:
-    print("It's not a palindrome.")
+    print("String is Not Palindrome")
